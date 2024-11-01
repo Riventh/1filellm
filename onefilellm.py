@@ -41,7 +41,8 @@ stop_words = set(stopwords.words("english"))
 
 TOKEN = os.getenv('GITHUB_TOKEN', 'default_token_here')
 if TOKEN == 'default_token_here':
-    raise EnvironmentError("GITHUB_TOKEN environment variable not set.")
+    #raise EnvironmentError("GITHUB_TOKEN environment variable not set.")
+    pass
 
 headers = {"Authorization": f"token {TOKEN}"}
 
